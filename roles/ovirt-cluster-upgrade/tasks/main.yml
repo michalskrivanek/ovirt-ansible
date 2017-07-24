@@ -51,7 +51,7 @@
       ovirt_clusters:
         auth: "{{ ovirt_auth }}"
         name: "{{ cluster_name }}"
-        scheduling_policy: InClusterUpgrade
+        scheduling_policy: ClusterInMaintenance
   
     - name: Shutdown VMs which can be stopped
       ovirt_vms:
